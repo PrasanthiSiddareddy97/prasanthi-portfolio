@@ -1,0 +1,14 @@
+<div class="container py-5" id="services">
+  <h2 class="text-center text-dark mb-5 fw-bold">My Services</h2>
+  <div class="row g-4">
+    <div class="col-md-4" *ngFor="let service of services">
+      <div class="card bg-dark text-white h-100 shadow-sm border-0">
+        <div class="card-body text-center">
+          <i [class]="service.icon + ' fa-3x mb-3 text-primary'"></i>
+          <h5 class="fw-semibold">{{ service.title }}</h5>
+          <p class="fw-semibold">{{ service.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
